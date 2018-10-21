@@ -60,7 +60,16 @@ public class MainActivity extends Activity {
         d3 = d1 * d2;
         t.setText(d3 + "");
     }
-
+    public void mod(View v) {
+        String n1 = e1.getText().toString();
+        String n2 = e2.getText().toString();                //to perform opern in double form
+        double d1, d2, d3;
+        //Integer.parseInt()
+        d1 = Double.parseDouble(n1);
+        d2 = Double.parseDouble(n2);
+        d3 = d1%d2;
+        t.setText(d3 + "");
+    }
 
     public void divide(View v) {
         String n1 = e1.getText().toString();
